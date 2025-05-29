@@ -1,98 +1,24 @@
-[
+{
+  "items": [
     {
-        "id": 1,
-        "title": "Comic Title 1",
-        "description": "A thrilling adventure comic.",
-        "image": "https://via.placeholder.com/200x300",
-        "author": "John Doe",
-        "genre": "Adventure",
-        "chapters": [
-            { "title": "The Beginning", "file": "https://drive.google.com/file/d/1WFzkCYK-8oRhAWYhy7YyrdmfqZ9r3QKY/view?usp=sharing" },
-            { "title": "The Quest", "file": "https://drive.google.com/file/d/1WFzkCYK-8oRhAWYhy7YyrdmfqZ9r3QKY/view?usp=sharing" },
-            { "title": "Final Battle", "file": "https://drive.google.com/file/d/1WFzkCYK-8oRhAWYhy7YyrdmfqZ9r3QKY/view?usp=sharing" }
-        ]
+      "id": 1,
+      "title": "Petualangan Si Kucing",
+      "cover": "https://drive.google.com/uc?export=view&id=1a2b3c4d5e6f7g8h9i0j",
+      "genres": ["Komedi", "Anak-anak"],
+      "pages": [
+        "https://drive.google.com/uc?export=view&id=1XaaaaaaPage1",
+        "https://drive.google.com/uc?export=view&id=1XaaaaaaPage2"
+      ]
     },
     {
-        "id": 2,
-        "title": "Comic Title 2",
-        "description": "A fantasy comic with epic battles.",
-        "image": "https://via.placeholder.com/200x300",
-        "author": "Jane Smith",
-        "genre": "Fantasy",
-        "chapters": [
-            { "title": "The Prophecy", "file": "https://drive.google.com/file/d/1WFzkCYK-8oRhAWYhy7YyrdmfqZ9r3QKY/view?usp=sharing" },
-            { "title": "Dark Forest", "file": "https://drive.google.com/file/d/1WFzkCYK-8oRhAWYhy7YyrdmfqZ9r3QKY/view?usp=sharing" }
-        ]
-    },
-    {
-        "id": 3,
-        "title": "Comic Title 3",
-        "description": "A sci-fi comic exploring the universe.",
-        "image": "https://via.placeholder.com/200x300",
-        "author": "Alex Brown",
-        "genre": "Sci-Fi",
-        "chapters": [
-            { "title": "First Contact", "file": "https://drive.google.com/file/d/1WFzkCYK-8oRhAWYhy7YyrdmfqZ9r3QKY/view?usp=sharing" },
-            { "title": "Star Voyage", "file": "https://drive.google.com/file/d/1WFzkCYK-8oRhAWYhy7YyrdmfqZ9r3QKY/view?usp=sharing" },
-            { "title": "Alien Encounter", "file": "https://drive.google.com/file/d/1WFzkCYK-8oRhAWYhy7YyrdmfqZ9r3QKY/view?usp=sharing" }
-        ]
-    },
-    {
-        "id": 4,
-        "title": "Comic Title 4",
-        "description": "A mystery comic with twists.",
-        "image": "https://via.placeholder.com/200x300",
-        "author": "Emily White",
-        "genre": "Mystery",
-        "chapters": [
-            { "title": "The Clue", "file": "https://drive.google.com/file/d/1WFzkCYK-8oRhAWYhy7YyrdmfqZ9r3QKY/view?usp=sharing" }
-        ]
-    },
-    {
-        "id": 5,
-        "title": "Comic Title 5",
-        "description": "A romantic comic story.",
-        "image": "https://via.placeholder.com/200x300",
-        "author": "Sarah Green",
-        "genre": "Romance",
-        "chapters": [
-            { "title": "Love at First Sight", "file": "https://drive.google.com/file/d/1WFzkCYK-8oRhAWYhy7YyrdmfqZ9r3QKY/view?usp=sharing" },
-            { "title": "Heartbreak", "file": "https://drive.google.com/file/d/1WFzkCYK-8oRhAWYhy7YyrdmfqZ9r3QKY/view?usp=sharing" }
-        ]
-    },
-    {
-        "id": 6,
-        "title": "Comic Title 6",
-        "description": "An action-packed comic.",
-        "image": "https://via.placeholder.com/200x300",
-        "author": "Mike Black",
-        "genre": "Action",
-        "chapters": [
-            { "title": "The Chase", "file": "https://drive.google.com/file/d/1WFzkCYK-8oRhAWYhy7YyrdmfqZ9r3QKY/view?usp=sharing" },
-            { "title": "Explosion", "file": "https://drive.google.com/file/d/1WFzkCYK-8oRhAWYhy7YyrdmfqZ9r3QKY/view?usp=sharing" }
-        ]
-    },
-    {
-        "id": 7,
-        "title": "Comic Title 7",
-        "description": "A horror comic with suspense.",
-        "image": "https://via.placeholder.com/200x300",
-        "author": "Laura Gray",
-        "genre": "Horror",
-        "chapters": [
-            { "title": "The Haunting", "file": "https://drive.google.com/file/d/1WFzkCYK-8oRhAWYhy7YyrdmfqZ9r3QKY/view?usp=sharing" }
-        ]
-    },
-    {
-        "id": 8,
-        "title": "Comic Title 8",
-        "description": "A comedy comic for laughs.",
-        "image": "https://via.placeholder.com/200x300",
-        "author": "Tom Blue",
-        "genre": "Comedy",
-        "chapters": [
-            { "title": "Funny Moments", "file": "https://drive.google.com/file/d/1WFzkCYK-8oRhAWYhy7YyrdmfqZ9r3QKY/view?usp=sharing" },
-            { "title": "Prank Wars", "file": "https://drive.google.com/file/d/1WFzkCYK-8oRhAWYhy7YyrdmfqZ9r3QKY/view?usp=sharing" }
-        ]
+      "id": 2,
+      "title": "Legenda Gunung Api",
+      "cover": "https://drive.google.com/uc?export=view&id=1b2c3d4e5f6g7h8i9j0k",
+      "genres": ["Aksi", "Fantasi"],
+      "pages": [
+        "https://drive.google.com/uc?export=view&id=1XbbbbbbPage1",
+        "https://drive.google.com/uc?export=view&id=1XbbbbbbPage2"
+      ]
     }
-]
+  ]
+}
