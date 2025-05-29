@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comic Detail</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <title>Detail Komik</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Comic Website</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#latest">Latest Comics</a></li>
-                <li><a href="index.html#all">All Comics</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="comic-detail">
-            <h2 id="comic-title"></h2>
-            <div class="comic-detail-container">
-                <img id="comic-image" src="" alt="">
-                <div class="comic-info">
-                    <p id="comic-description"></p>
-                    <p><strong>Author:</strong> <span id="comic-author"></span></p>
-                    <p><strong>Genre:</strong> <span id="comic-genre"></span></p>
-                    <h3>Chapters</h3>
-                    <ul id="chapter-list"></ul>
-                    <h3>Read Comic</h3>
-                    <div id="comic-viewer">
-                        <iframe id="pdf-viewer" style="width:100%;height:600px;"></iframe>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>© 2025 Comic Website</p>
-    </footer>
-    <script src="js/script.js"></script>
+  <header>
+    <h1>Detail Komik</h1>
+    <a href="index.html">← Kembali</a>
+  </header>
+
+  <main id="detail" style="padding: 1rem;"></main>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id");
+
+    fetch('data.json')
+      .then(res => res.json())
+      .then(data => {
+        const komik = data.items.find(k => k.id == id);
+        if (komik) {
+          const container = document.getElementById("detail");
+          container.innerHTML = `
+            <h2>${komik.title}</h2>
+            <p><strong>Genres:</strong> ${komik.genres.join(', ')}</p>
+          `;
+
+          komik.pages.forEach(img => {
+            const imageEl = document.createElement('img');
+            imageEl.src = img;
+            imageEl.style.width = '100%';
+            imageEl.style.margin = '1rem 0';
+            container.appendChild(imageEl);
+          });
+        } else {
+          document.getElementById("detail").textContent = "Komik tidak ditemukan.";
+        }
+      });
+  </script>
 </body>
 </html>
