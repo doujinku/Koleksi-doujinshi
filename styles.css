@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.comic-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.comic-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.comic-card:hover {
+    transform: scale(1.05);
+}
+
+.comic-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.comic-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.pagination button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Styles for detail page */
+.comic-detail-container {
+    display: flex;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.comic-detail-container img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.comic-info {
+    flex: 1;
+}
+
+#chapter-list {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+#chapter-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#chapter-list li a {
+    text-decoration: none;
+    color: #333;
+}
+
+#chapter-list li a:hover {
+    color: #007bff;
+}
+
+#comic-viewer {
+    margin-top: 1rem;
+}
+
+#pdf-viewer {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

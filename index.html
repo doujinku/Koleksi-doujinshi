@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Comic Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#latest">Latest Comics</a></li>
+                <li><a href="#all">All Comics</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="latest">
+            <h2>Latest Comics</h2>
+            <div id="latest-comics" class="comic-grid"></div>
+        </section>
+        <section id="all">
+            <h2>All Comics</h2>
+            <div id="all-comics" class="comic-grid"></div>
+            <div id="pagination" class="pagination">
+                <button id="prev-page" disabled>Previous</button>
+                <span id="page-info"></span>
+                <button id="next-page">Next</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Comic Website</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
