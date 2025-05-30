@@ -1,44 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Detail Komik</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Detail Komik</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Detail Komik</h1>
-    <a href="index.html">← Kembali</a>
-  </header>
+    <main class="content">
+        <a href="index.html">← Kembali</a>
+        <div id="comicDetail" class="comic-detail"></div>
+    </main>
 
-  <main id="detail" style="padding: 1rem;"></main>
+    <script>
+        const comic = JSON.parse(localStorage.getItem("selectedComic"));
+        const detail = document.getElementById("comicDetail");
 
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    const id = params.get("id");
-
-    fetch('data.json')
-      .then(res => res.json())
-      .then(data => {
-        const komik = data.items.find(k => k.id == id);
-        if (komik) {
-          const container = document.getElementById("detail");
-          container.innerHTML = `
-            <h2>${komik.title}</h2>
-            <p><strong>Genres:</strong> ${komik.genres.join(', ')}</p>
-          `;
-
-          komik.pages.forEach(img => {
-            const imageEl = document.createElement('img');
-            imageEl.src = img;
-            imageEl.style.width = '100%';
-            imageEl.style.margin = '1rem 0';
-            container.appendChild(imageEl);
-          });
+        if (comic) {
+            detail.innerHTML = `
+                <h1>${comic.title}</h1>
+                <img src="${comic.image}" alt="${comic.title}" style="max-width: 100%;">
+                <p><strong>Author:</strong> ${comic.author}</p>
+                <p><strong>Deskripsi:</strong> ${comic.description || "Belum ada deskripsi."}</p>
+            `;
         } else {
-          document.getElementById("detail").textContent = "Komik tidak ditemukan.";
+            detail.innerHTML = "<p>Data komik tidak ditemukan.</p>";
         }
-      });
-  </script>
+    </script>
 </body>
 </html>
