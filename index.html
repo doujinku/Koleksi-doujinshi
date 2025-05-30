@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Komik Gallery</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Komik Online</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Komik Galeri</h1>
-  </header>
+    <header>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <nav id="navMenu" class="nav-menu">
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="#author">Author</a></li>
+            </ul>
+        </nav>
+        <input type="text" id="searchBox" placeholder="Cari Komik...">
+    </header>
 
-  <main id="gallery" class="grid"></main>
+    <main class="content">
+        <h1>Komik Online</h1>
+        <div id="comicList" class="comic-list"></div>
+        <div id="pagination" class="pagination"></div>
+    </main>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
